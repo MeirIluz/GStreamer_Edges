@@ -9,7 +9,7 @@ while True:
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     blur = cv2.GaussianBlur(gray, (5, 5), 0)
-    edges = cv2.Canny(blur, 100, 200)
+    edges = cv2.Canny(blur, 30, 60)
 
     cv2.imshow("Original", frame)
     cv2.imshow("Edges", edges)
