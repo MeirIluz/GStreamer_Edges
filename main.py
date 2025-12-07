@@ -24,6 +24,5 @@ try:
 except KeyboardInterrupt:
     pass
 
-pipeline.set_state(Gst.State.NULL)
 main_loop.quit()
 main_loop_thread.join()
